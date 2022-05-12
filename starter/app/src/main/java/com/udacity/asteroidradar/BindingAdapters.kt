@@ -27,8 +27,10 @@ fun bindImageOfTheDay(imgView: ImageView, img : ImageOfTheDay?) {
 fun bindAsteroidStatusImage(imageView: ImageView, isHazardous: Boolean) {
     if (isHazardous) {
         imageView.setImageResource(R.drawable.ic_status_potentially_hazardous)
+        imageView.contentDescription = "Potentially Hazardous"
     } else {
         imageView.setImageResource(R.drawable.ic_status_normal)
+        imageView.contentDescription = "Not Hazardous"
     }
 }
 
